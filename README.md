@@ -25,10 +25,17 @@ Clicar no botão de cadastro.
 Verificar se a mensagem de sucesso é exibida.
 🛠 Tecnologias Utilizadas
 
+✅ Critério de Aceitação
+
+Mensagem "Cadastro realizado com sucesso!" deve ser exibida após o envio dos dados.
+
 Cypress - Framework de testes de front-end
 JavaScript
+
+
 🔥 Código do Teste
 
+```javascript
 describe('US-012-Funcionalidade: Cadastro de membros', () => {
   it('Deve fazer o cadastro de campos obrigatórios', () => {
     cy.visit('http://127.0.0.1:8080')
@@ -41,6 +48,5 @@ describe('US-012-Funcionalidade: Cadastro de membros', () => {
     cy.get('#signup-response').should('contain', 'Cadastro realizado com sucesso!')
   })
 })
-✅ Critério de Aceitação
 
-Mensagem "Cadastro realizado com sucesso!" deve ser exibida após o envio dos dados.
+
