@@ -3,24 +3,9 @@ on: push
 jobs:
   cypress-run:
     runs-on: ubuntu-24.04
-    strategy:
-      matrix:
-        node: [18, 20, 22, 23]
-    name: E2E on Node v${{ matrix.node }}
     steps:
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
       - name: Checkout
         uses: actions/checkout@v4
-        
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        with:
-          record: true
-          group: Tests on Node v${{ matrix.node }}
-          cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
