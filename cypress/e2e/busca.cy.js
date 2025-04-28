@@ -1,8 +1,12 @@
 
 
-describe('US-00: Funcionalidade: Busca de filmes', () => {
+describe('US-001: Funcionalidade: Busca de filmes', () => {
     beforeEach(() => {
       cy.visit('/')
+    });
+
+    afterEach(() => {
+        cy.screenshot()
     });
 
     it('Deve buscar filme com sucesso', () => {
