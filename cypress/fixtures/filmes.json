@@ -1,0 +1,24 @@
+[
+    {
+        "titulo" : "Matrix",
+        "ano" :  1999,
+        "descrição" : "Matrix é um filme de ficção científica que narra a aventura de Neo"
+    },
+
+    {
+        "titulo" : "Batman",
+        "ano" :  1990,
+        "descrição" : "Batman é um filme de um herói sombrio que combate o crime organizado em Gothan City"
+    },
+    {
+        "titulo" : "Inception",
+        "ano" :  2010,
+        "descrição" : "A Origem é uma história bem complexa que cria dimensões em sonhos."
+    },
+    {
+        "titulo" : "The Lord of the Rings",
+        "ano" :  2001,
+        "descrição" : "Um grupo de pessoas se juntam para impedir que a Terra Média seja destruída."
+    }
+
+]
